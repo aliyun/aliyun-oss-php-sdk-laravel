@@ -1,6 +1,7 @@
 # Aliyun Oss Service Provider for Laravel 5
 
-[![Build Status](https://travis-ci.org/RobertYue19900425/aliyun-oss-sdk-php-laravel.svg?branch=master)](https://travis-ci.org/RobertYue19900425/aliyun-oss-sdk-php-laravel)
+[![Build Status](https://travis-ci.org/aliyun/aliyun-oss-php-sdk-laravel.svg?branch=master)](https://travis-ci.org/aliyun/aliyun-oss-php-sdk-laravel)
+[![Coverage Status](https://coveralls.io/repos/github/aliyun/aliyun-oss-php-sdk-laravel/badge.svg?branch=master)](https://coveralls.io/github/aliyun/aliyun-oss-php-sdk-laravel?branch=master)
 
 ## laravel项目中引用该包
 ```
