@@ -12,7 +12,7 @@ abstract class AliyunOssServiceProviderTest extends \PHPUnit_Framework_TestCase
        $this->setupServiceProvider($app);
 
        $content = "abcd"; 
-       $bucket = getenv('OSS_TEST_BUCKET');
+       $bucket = getenv('OSS_BUCKET');
        $app['aliyun-oss']->putObject($bucket, '1.txt', $content);
        $result = $app['aliyun-oss']->getObject($bucket, '1.txt');
        $this->assertEquals($result, $content);
