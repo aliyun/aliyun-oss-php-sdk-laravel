@@ -76,10 +76,10 @@ $app->get('/', function () use ($app) {
 ## 运行test case
 ```
 1. 首先设置环境变量
-export OSS_TEST_ENDPOINT=''                 
-export OSS_TEST_ACCESS_KEY_ID=''              
-export OSS_TEST_ACCESS_KEY_SECRET=''
-export OSS_TEST_BUCKET=''
+export OSS_ENDPOINT=''                 
+export OSS_ACCESS_KEY_ID=''              
+export OSS_ACCESS_KEY_SECRET=''
+export OSS_BUCKET=''
 2. 进入目录,执行
 php vendor/bin/phpunit
 ```

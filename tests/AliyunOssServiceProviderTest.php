@@ -31,10 +31,10 @@ abstract class AliyunOssServiceProviderTest extends \PHPUnit_Framework_TestCase
         $this->setupServiceProvider($app);
         $config = $app['config']->get('aliyun-oss');
 
-        $this->assertEquals(getenv('OSS_TEST_ACCESS_KEY_ID'), $config['id']);
-        $this->assertEquals(getenv('OSS_TEST_ACCESS_KEY_SECRET'), $config['key']);
-        $this->assertEquals(getenv('OSS_TEST_ENDPOINT'), $config['endpoint']);
-        $this->assertEquals(getenv('OSS_TEST_BUCKET'), $config['bucket']);
+        $this->assertEquals(getenv('OSS_ACCESS_KEY_ID'), $config['id']);
+        $this->assertEquals(getenv('OSS_ACCESS_KEY_SECRET'), $config['key']);
+        $this->assertEquals(getenv('OSS_ENDPOINT'), $config['endpoint']);
+        $this->assertEquals(getenv('OSS_BUCKET'), $config['bucket']);
     }
 
     /**
