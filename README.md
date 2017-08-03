@@ -9,7 +9,7 @@
 2. 在工程的composer.json中添加
 {
     "require": {
-        "alicloud/aliyun-oss-php-sdk-laravel": "~1.1.0"
+        "aliyuncs/aliyun-oss-php-sdk-laravel": "~1.2.0"
     }
 }
 3. 然后执行
