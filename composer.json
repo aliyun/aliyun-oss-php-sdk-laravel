@@ -1,5 +1,5 @@
 {
-    "name": "aliyun/aliyun-oss-php-sdk-laravel",
+    "name": "alicloud/aliyun-oss-php-sdk-laravel",
     "homepage": "https://github.com/aliyun",
     "description": "A simple Laravel 5 and lumen service provider for including the Oss PHP SDK for PHP.",
     "keywords": ["laravel 5", "lumen", "aliyun", "alicloud", "sdk", "oss"],
