@@ -1,14 +1,14 @@
-# AliCloud OSS Service Provider for Laravel 5
+# Aliyun OSS Service Provider for Laravel 5
 
 [![Build Status](https://travis-ci.org/aliyun/aliyun-oss-php-sdk-laravel.svg?branch=master)](https://travis-ci.org/aliyun/aliyun-oss-php-sdk-laravel)
 [![Coverage Status](https://coveralls.io/repos/github/aliyun/aliyun-oss-php-sdk-laravel/badge.svg?branch=master)](https://coveralls.io/github/aliyun/aliyun-oss-php-sdk-laravel?branch=master)
 
-## [README of Chinese](https://github.com/aliyun/aliyun-oss-php-sdk-laravel/blob/master/README-CN.md)
+## [README of English](https://github.com/aliyun/aliyun-oss-php-sdk-laravel/blob/master/README.md)
 
-## Make a Reference in Your Laravel Project
-- Install the Laravel framework or the Lumen framework.
-- Create a Laravel or Lumen project, depending on the framework you have installed.
-- In the composer.json file of the new project, insert the following code:
+## Laravel项目中引用包
+
+- 安装Laravel/Lumen，并新建Laravel/Lumen工程
+- 在工程的 composer.json 中添加
     ```
     {
         "require": {
@@ -16,12 +16,11 @@
         }
     }
     ```
+- 执行 `composer update`
 
-- Run the following command: `composer update`
 
-##  For the Laravel Project
-
-- Edit the vendor/aliyun-oss/aliyun-oss-php-sdk-laravel/config/config.php file as follows:
+## Laravel工程
+- 修改 vendor/aliyun-oss/aliyun-oss-php-sdk-laravel/config/config.php
     ```
     return [
         'id' => 'your id',
@@ -30,24 +29,21 @@
         'bucket' => 'your bucket'
     ];
     ```
-
-- Edit the config/app.php file and register OSS Service Provider:
+- 修改 config/app.php 注册 Aliyun OSS Service Provider.
     ```
     'providers' => array(
         // ...
         AliyunOss\Laravel\AliyunOssServiceProvider::class,
     )
     ```
-
--  Edit the config/app.php file to insert an aliases segment.
+- 在 config/app.php 增加 aliases.
     ```
     'aliases' => array(
         // ...
         'OSS' => AliyunOss\Laravel\AliyunOssFacade::class,
     )
     ```
-
--  Edit the routes/web.php file as follows:
+- 修改routes/web.php为
     ```
     Route::get('/', function()
     {
@@ -58,8 +54,9 @@
     });
     ```
 
-## For the Lumen Project
-- Edit the vendor/aliyun-oss/aliyun-oss-php-sdk-laravel/config/config.php file as follows:
+## Lumen工程
+
+- 修改vendor/aliyun-oss/aliyun-oss-php-sdk-laravel/config/config.php
     ```
     return [
         'id' => 'your id',
@@ -68,13 +65,12 @@
         'bucket' => 'your bucket'
     ];
     ```
-
-- Edit the bootstrap/app.php file and register OSS Service Providers:
+- 在bootstrap/app.php 中注册 Aliyun OSS Service Providers
     ```
     $app->register(AliyunOss\Laravel\AliyunOssServiceProvider::class);
     ```
 
-- Edit the routes/web.php file as follows:
+- 修改 routes/web.php 为
     ```
     $app->get('/', function () use ($app) {
         $client = $app->make('aliyun-oss');
@@ -84,16 +80,16 @@
     });
     ```
 
-## Run the Test Case
-- Set the following environment variables:
-```
-export OSS_ENDPOINT=''
-export OSS_ACCESS_KEY_ID=''
-export OSS_ACCESS_KEY_SECRET=''
-export OSS_BUCKET=''
-```
+## 运行测试
+- 设置环境变量
+    ```
+    export OSS_ENDPOINT=''
+    export OSS_ACCESS_KEY_ID=''
+    export OSS_ACCESS_KEY_SECRET=''
+    export OSS_BUCKET=''
+    ```
 
-- Switch to the project directory and run the following command: `php vendor/bin/phpunit`
+- 进入工程目录，执行 `php vendor/bin/phpunit`
 
-## License
+## 协议
 - [MIT](https://github.com/aliyun/aliyun-oss-php-sdk-laravel/blob/master/LICENSE.md)
