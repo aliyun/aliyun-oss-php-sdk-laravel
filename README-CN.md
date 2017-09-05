@@ -90,3 +90,6 @@
     ```
 
 - 进入工程目录，执行 `php vendor/bin/phpunit`
+
+## 协议
+- [MIT](https://github.com/aliyun/aliyun-oss-php-sdk-laravel/blob/master/LICENSE.md)

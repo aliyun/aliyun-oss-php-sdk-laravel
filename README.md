@@ -94,3 +94,6 @@ export OSS_BUCKET=''
 ```
 
 - Switch to the project directory and run the following command: `php vendor/bin/phpunit`
+
+## License
+- [MIT](https://github.com/aliyun/aliyun-oss-php-sdk-laravel/blob/master/LICENSE.md)
