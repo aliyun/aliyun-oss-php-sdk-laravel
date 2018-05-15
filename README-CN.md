@@ -49,7 +49,7 @@
     {
         $client = App::make('aliyun-oss');
         $client->putObject("your bucket", "your object", "content you want to upload");
-        $result = $client->getObject("your bucket", "your boject");
+        $result = $client->getObject("your bucket", "your object");
         echo $result;
     });
     ```
