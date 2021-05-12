@@ -12,10 +12,10 @@
         }
     ],
     "require": {
-        "php": ">=5.5.9",
-        "aliyuncs/oss-sdk-php": "~2.2.1",
-        "illuminate/support": "~5.1",
-    	"laravel/framework": "~5.2"
+        "php": ">=7.2",
+        "aliyuncs/oss-sdk-php": "~2.4.1",
+        "illuminate/support": "^6.0|^7.0",
+    	"laravel/framework": "^6.0|^7.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.0|~5.0",
