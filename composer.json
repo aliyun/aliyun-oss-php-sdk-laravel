@@ -14,7 +14,7 @@
     "require": {
         "php": ">=7.2",
         "aliyuncs/oss-sdk-php": "~2.4.1",
-        "illuminate/support": "^6.0",
+        "illuminate/support": "^6.0|^7.0",
     	"laravel/framework": "^6.0|^7.0"
     },
     "require-dev": {
